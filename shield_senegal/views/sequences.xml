@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="service_seq" model="ir.sequence">
+            <field name="name">Service Sequence</field>
+            <field name="code">service.seq</field>
+            <field name="prefix">SERV/</field>
+            <field name="padding">6</field>
+        </record>
+        <record id="employe_code" model="ir.sequence">
+            <field name="name">Employé Sequence</field>
+            <field name="code">employe.code</field>
+            <field name="prefix">AGENT/</field>
+            <field name="padding">4</field>
+        </record>
+        <record id="materiel_code" model="ir.sequence">
+            <field name="name">Employé Sequence</field>
+            <field name="code">materiel.code</field>
+            <field name="prefix">MAT/</field>
+            <field name="padding">4</field>
+        </record>
+    </data>
+</odoo>

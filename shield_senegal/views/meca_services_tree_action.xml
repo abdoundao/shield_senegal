@@ -1,0 +1,121 @@
+<odoo>
+    <data>
+        <!-- Vue tree et action pour la classe fonction.employe -->
+        <record id="employe_tree" model="ir.ui.view">
+            <field name="name">fonction.employe.tree</field>
+            <field name="model">fonction.employe</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_fonctionemploye" model="ir.actions.act_window">
+            <field name="name">Fonction Employe</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fonction.employe</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Vue tree et action pour la classe Employe -->
+        <record id="view_employe_tree" model="ir.ui.view">
+            <field name="name">employe.tree</field>
+            <field name="model">employe</field>
+            <field name="arch" type="xml">
+                <tree>
+
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="prenom"/>
+                    <field name="email"/>
+                    <field name="phone"/>
+                    <field name="fonction_employe_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_employe" model="ir.actions.act_window">
+            <field name="name">Employe</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">employe</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Vue tree et action pour la classe TypeMateriel -->
+        <record id="view_typemateriel_tree" model="ir.ui.view">
+            <field name="name">type.materiel.tree</field>
+            <field name="model">type.materiel</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_typemateriel" model="ir.actions.act_window">
+            <field name="name">Type Materiel</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">type.materiel</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Vue tree et action pour la classe Materiel -->
+        <record id="view_materiel_tree" model="ir.ui.view">
+            <field name="name">materiel.tree</field>
+            <field name="model">materiel</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="type_materiel_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_materiel" model="ir.actions.act_window">
+            <field name="name">Materiel</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">materiel</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <record id="view_typeservice_tree" model="ir.ui.view">
+            <field name="name">type.service.tree</field>
+            <field name="model">type.service</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="duration"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_typeservice" model="ir.actions.act_window">
+            <field name="name">Type de Service</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">type.service</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Vue tree et action pour la classe Service -->
+        <record id="view_service_tree" model="ir.ui.view">
+            <field name="name">service.tree</field>
+            <field name="model">service</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="type_service_id"/>
+                    <field name="service_datetime_begin"/>
+                    <field name="service_datetime_end"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_service" model="ir.actions.act_window">
+            <field name="name">Service</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">service</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

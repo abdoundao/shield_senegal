@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+shield_senegal.access_fonction_employe,access_fonction_employe,shield_senegal.model_fonction_employe,base.group_user,1,1,1,0
+shield_senegal.access_employe,access_employe,shield_senegal.model_employe,base.group_user,1,1,1,0
+shield_senegal.access_type_materiel,access_type_materiel,shield_senegal.model_type_materiel,base.group_user,1,1,1,0
+shield_senegal.access_materiel,access_materiel,shield_senegal.model_materiel,base.group_user,1,1,1,0
+shield_senegal.access_type_service,access_type_service,shield_senegal.model_type_service,base.group_user,1,1,1,0
+shield_senegal.access_service,access_service,shield_senegal.model_service,base.group_user,1,1,1,0
+shield_senegal.access_fonction_employe_line,access_fonction_employe_line,shield_senegal.model_fonction_employe_line,base.group_user,1,1,1,1
