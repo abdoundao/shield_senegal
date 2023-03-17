@@ -10,20 +10,5 @@
         <menuitem id="menu_service_service" name="Service" parent="menu_service" action="action_service"  sequence="5">
         </menuitem>
 
-        <!-- Sous-menu Matériel -->
-        <menuitem id="menu_materiel" name="Matériel" parent="menu_service_root"  sequence="5"/>
-        <menuitem id="menu_materiel_type" name="Type de Matériel" parent="menu_materiel" action="action_typemateriel"  sequence="1">
-        </menuitem>
-        <menuitem id="menu_materiel_materiel" name="Matériel" parent="menu_materiel" action="action_materiel"  sequence="5">
-        </menuitem>
-
-        <!-- Sous-menu Employé -->
-        <menuitem id="menu_employe" name="Employé" parent="menu_service_root"  sequence="10"/>
-        <menuitem id="menu_employe_fonction" name="Fonction Employé" parent="menu_employe"
-                  action="action_fonctionemploye"  sequence="1">
-        </menuitem>
-        <menuitem id="menu_employe_employe" name="Employé" parent="menu_employe" action="action_employe"  sequence="5">
-        </menuitem>
-
     </data>
 </odoo>

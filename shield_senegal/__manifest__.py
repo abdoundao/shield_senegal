@@ -7,8 +7,8 @@
     'license': 'OPL-1',
     'summary': 'This apps helps to make project as template and make new project from the Template',
     'description': """Project Template , Make project as template and make new project from the Template, """,
-    'author': 'BrowseInfo',
-    'website': 'https://www.browseinfo.in',
+    'author': 'Abdou NDAO',
+    'website': 'https://www.shieldsenegal.sn',
     'depends': ['base', 'project', 'sale', 'purchase', 'account', 'code_backend_theme'],
     'data': [
         'views/meca_services_form.xml',

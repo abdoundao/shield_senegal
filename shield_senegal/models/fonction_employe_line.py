@@ -6,5 +6,5 @@ class FonctionEmployeLine(models.Model):
     _name = 'fonction.employe.line'
 
     number = fields.Integer(string="Nombre")
-    fonction_employe_id = fields.Many2one('fonction.employe', string="Fonctions employés")
-    service_type_id = fields.Many2one('type.service', string="Type de service")
+    fonction_employe_id = fields.Many2one('hr.job', string="Fonctions employés")
+    service_id = fields.Many2one('service', string="service")
