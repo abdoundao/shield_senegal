@@ -5,10 +5,15 @@
 
         <!-- Sous-menu Service -->
         <menuitem id="menu_service" name="Service" parent="menu_service_root" sequence="1"/>
-        <menuitem id="menu_service_type" name="Type de Service" parent="menu_service" action="action_typeservice"  sequence="1"/>
+        <menuitem id="menu_service_planning" name="Planning" parent="menu_service_root" sequence="5"/>
+        <menuitem id="menu_service_type" name="Type de Service" parent="menu_service" action="action_typeservice"  sequence="5"/>
 
-        <menuitem id="menu_service_service" name="Service" parent="menu_service" action="action_service"  sequence="5">
+        <menuitem id="menu_service_service" name="Service" parent="menu_service" action="action_service"  sequence="1">
         </menuitem>
+        <menuitem id="menu_service_create_planning" name="Créer des lignes de plannings" parent="menu_service_planning" action="action_planning_creation_wizard"
+                  sequence="5"/>
+        <menuitem id="menu_service_check_planning" name="Planning" parent="menu_service_planning" action="planning_line_action"
+                  sequence="5"/>
 
     </data>
 </odoo>

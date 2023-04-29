@@ -36,6 +36,7 @@
                             <field name="service_datetime_begin"/>
                             <field name="service_datetime_end"/>
                             <field name="partner_id"/>
+                            <field name="zone_id" options="{'no_create':True}"/>
                             <field name="employe_ids" widget='many2many_tags'/>
                             <field name="fonction_employe_line_ids" mode="tree">
                                 <tree editable="bottom">
@@ -52,5 +53,49 @@
                 </form>
             </field>
         </record>
+        <odoo>
+        <record model="ir.ui.view" id="view_employee_form_inherited">
+            <field name="name">hr.employee.form.inherited</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="geo_zone_ids"  widget="many2many_tags" />
+                </xpath>
+            </field>
+        </record>
+
+        <record id="action_planning_creation_wizard" model="ir.actions.act_window">
+            <field name="name">Create Planning</field>
+            <field name="res_model">wizard.planning</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+<record id="view_planning_creation_wizard_form" model="ir.ui.view">
+    <field name="name">wizard.planning</field>
+    <field name="model">wizard.planning</field>
+    <field name="arch" type="xml">
+        <form string="Create Planning">
+            <group>
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <field name="employes_ids"/>
+            </group>
+            <footer>
+                <button name="create_planning" string="Create" type="object" class="btn-primary"/>
+                <button string="Cancel" class="btn-default" special="cancel"/>
+            </footer>
+        </form>
+    </field>
+</record>
+        <record model="ir.actions.act_window" id="planning_line_action">
+            <field name="name">Planning Line</field>
+            <field name="res_model">planning.line</field>
+            <field name="view_mode">tree,timeline</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create a new planning line</p>
+            </field>
+        </record>
+</odoo>
     </data>
 </odoo>

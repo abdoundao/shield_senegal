@@ -9,7 +9,7 @@
     'description': """Project Template , Make project as template and make new project from the Template, """,
     'author': 'Abdou NDAO',
     'website': 'https://www.shieldsenegal.sn',
-    'depends': ['base', 'project', 'sale', 'purchase', 'account', 'code_backend_theme'],
+    'depends': ['base', 'hr', 'project', 'sale', 'purchase', 'account', 'code_backend_theme', 'web_timeline'],
     'data': [
         'views/meca_services_form.xml',
         'views/meca_services_tree_action.xml',

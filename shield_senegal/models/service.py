@@ -24,6 +24,8 @@ class Service(models.Model):
         ('effectue', 'Effectué'),
     ], string='État', default='en_attente_confirmation')
     fonction_employe_line_ids = fields.One2many('fonction.employe.line', 'service_id', string="Type d'employés requis")
+    zone_id = fields.Many2one('geo.zone', string="Zone géographiques")
+
 
 
 

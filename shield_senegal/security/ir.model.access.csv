@@ -1,4 +1,8 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 shield_senegal.access_type_service,access_type_service,shield_senegal.model_type_service,base.group_user,1,1,1,0
 shield_senegal.access_service,access_service,shield_senegal.model_service,base.group_user,1,1,1,0
+shield_senegal.access_planning_line,access_planning_line,shield_senegal.model_planning_line,base.group_user,1,1,1,1
+shield_senegal.access_geo_zone,access_geo_zone,shield_senegal.model_geo_zone,base.group_user,1,1,1,1
+shield_senegal.access_wizard_planning,access_wizard_planning,shield_senegal.model_wizard_planning,base.group_user,1,1,1,1
 shield_senegal.access_fonction_employe_line,access_fonction_employe_line,shield_senegal.model_fonction_employe_line,base.group_user,1,1,1,1
+
